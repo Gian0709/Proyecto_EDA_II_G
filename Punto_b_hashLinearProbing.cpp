@@ -152,7 +152,7 @@ public:
      * Evalúa el factor de carga y redimensiona automáticamente de ser necesario.
      */
     bool insert(const std::string& key, const std::string& value) {
-        // 1. Verificar factor de carga: si es >= 1.0, ampliamos la tabla primero
+        // 1. Verificar factor de carga: si es >= 1.0, ampliamos la tabla primero (corrección aplicada)
         double loadFactor = static_cast<double>(num_keys) / size;
         if (loadFactor >= 1.0) {
             resize();

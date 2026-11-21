@@ -97,10 +97,10 @@ public:
     void printTopN(int n) {
         std::cout << "\n--- TOP " << n << " K-MERS MAS FRECUENTES (MAX-HEAP) ---\n";
 
-        // Creamos una copia del heap para preservar los datos originales intactos
+        // Se crea una copia del heap para preservar los datos originales intactos
         std::vector<KmerFrequency> copiaHeap = heap;
 
-        // Reconstruimos el heap localmente con la copia
+        // Se reconstruye el heap localmente con la copia
         MaxHeapKmers tempHeap;
         tempHeap.buildHeap(copiaHeap);
 

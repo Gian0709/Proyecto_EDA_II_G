@@ -183,6 +183,7 @@ public:
      * Exporta todos los K-mers y frecuencias válidos hacia un vector estándar
      * para facilitar su procesamiento posterior en el Max-Heap.
      */
+     // Codigo generado
     std::vector<KmerFrequency> obtenerKmersValidos() const {
         std::vector<KmerFrequency> lista;
         for (int i = 0; i < size; ++i) {
